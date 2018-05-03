@@ -21,7 +21,7 @@ Irssi.sls sisältö:
 	$ irssi:
 	$   pkg.installed
 
-Tein sille kaveriksi samaan kansioon myös top.sls, johon sijoitin luodun irssi-staten.
+Tein sille kaveriksi samaan kansioon myös top.sls-tiedoston, johon sijoitin luodun irssi-staten.
 
 
 Tämän jälkeen palasin juurikansioon, johon loin gitti.sh-skriptin.
@@ -32,3 +32,16 @@ Skriptin sisältö:
 Ideana siis, että yhdellä komennolla voi lisätä kaiken Gittiin, pullata ja pushata. Testaus:
 	
 	$ bash gitti.sh
+
+Tekstiä vilisee, git pyytää antamaan commitin editointitekstin, pyytää salasanan ja siirtää kaiken GitHubiin. Toimi hyvin!
+
+Tämän jälkeen loin vielä woop.sh-skriptin, joka ajaisi highstaten, eli tässä tapauksessa asentaisi irssin, jos sitä ei ole aiemmin asennettu. 
+woop.sh sisältö:
+
+	$ sudo salt-call --local state.highstate --file-root salt/
+
+Testaus:
+
+	bash woop.sh
+
+
