@@ -26,8 +26,9 @@ Tein sille kaveriksi samaan kansioon myös top.sls, johon sijoitin luodun irssi-
 
 Tämän jälkeen palasin juurikansioon, johon loin gitti.sh-skriptin.
 Skriptin sisältö:
+	
 	$ git add . && git commit && git pull && git push
 
 Ideana siis, että yhdellä komennolla voi lisätä kaiken Gittiin, pullata ja pushata. Testaus:
+	
 	$ bash gitti.sh
-
