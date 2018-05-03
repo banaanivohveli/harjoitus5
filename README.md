@@ -42,6 +42,8 @@ woop.sh sisältö:
 
 Testataan koko jutun toiminta!
 
+	bash gitti.sh
+	cd ..
 	rm -rf harjoitus5
 	git clone https://github.com/banaanivohveli/harjoitus5.git
 	cd harjoitus5
