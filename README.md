@@ -53,17 +53,17 @@ Nätisti toimi!
 	local:
 	----------
 	ID: irssi
-    Function: pkg.installed
-      Result: True
-     Comment: Package irssi is already installed
-     Started: 20:45:18.628790
-    Duration: 2240.659 ms
-     Changes:
+	Function: pkg.installed
+	Result: True
+	Comment: Package irssi is already installed
+	Started: 20:45:18.628790
+	Duration: 2240.659 ms
+	Changes:
 
-Summary for local
-------------
-Succeeded: 1
-Failed:    0
-------------
-Total states run:     1
+	Summary for local
+	------------
+	Succeeded: 1
+	Failed:    0
+	------------
+	Total states run:     1
 
