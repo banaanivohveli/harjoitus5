@@ -40,8 +40,8 @@ woop.sh sisältö:
 
 	sudo salt-call --local state.highstate --file-root salt/
 
-Testaus:
+Testataan koko jutun toiminta!
 
+	rm -rf harjoitus5
+	git clone https://github.com/banaanivohveli/harjoitus5.git
 	bash woop.sh
-
-
